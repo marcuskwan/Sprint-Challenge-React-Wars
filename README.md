@@ -24,16 +24,16 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+- [ x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+ReactJS is a JavaScript library for building user interfaces. Using hooks (useState and useEffect which are methods from the React library), we can store data in a functional component with state, pass it down to other components via the props attribute using JSX (html-looking code that interacts with a virtual dom, which then updates the most recent changes to the actual dom in a more efficient way), and we can also fetch data within the useEffect method, which forces our page to rerender based on the arguments we give useEffect
 - [ ] What does it mean to _think_ in react?
-
+It means thinking about building User Interfaces, or about websites in terms of components
 - [ ] Describe state.
-
+state used to refer to the current state (data within the state object). I think now a better way of framing it would be the state of a variable before any interactions occur via button clicks or submits
 - [ ] Describe props.
-
+props is an attribute we pass thru to child components, we can pass down functions and data from our main component which is mainly doing a fetch call to an API
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
-
+by useEffect for props, or the function you defined when calling useState for state. I think side effects are anything that affects an area outside the scope of the function. E.g. a fetch call, a console log ? , code that reassigns or resets a variable's value outside its closure. Pure functions take in arguments and return a single pure value every time. Side effects are generally effects that are everything else that aren't of this goal.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
@@ -60,7 +60,7 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people)
 - [ ] Set the data you fetch to state
 - [ ] Map over the list and render a component for each character on the page
