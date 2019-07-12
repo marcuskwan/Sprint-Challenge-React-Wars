@@ -26,55 +26,55 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 ReactJS is a JavaScript library for building user interfaces. Using hooks (useState and useEffect which are methods from the React library), we can store data in a functional component with state, pass it down to other components via the props attribute using JSX (html-looking code that interacts with a virtual dom, which then updates the most recent changes to the actual dom in a more efficient way), and we can also fetch data within the useEffect method, which forces our page to rerender based on the arguments we give useEffect
-- [ ] What does it mean to _think_ in react?
+- [x ] What does it mean to _think_ in react?
 It means thinking about building User Interfaces, or about websites in terms of components
-- [ ] Describe state.
+- [ x] Describe state.
 state used to refer to the current state (data within the state object). I think now a better way of framing it would be the state of a variable before any interactions occur via button clicks or submits
-- [ ] Describe props.
+- [x ] Describe props.
 props is an attribute we pass thru to child components, we can pass down functions and data from our main component which is mainly doing a fetch call to an API
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [x ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 by useEffect for props, or the function you defined when calling useState for state. I think side effects are anything that affects an area outside the scope of the function. E.g. a fetch call, a console log ? , code that reassigns or resets a variable's value outside its closure. Pure functions take in arguments and return a single pure value every time. Side effects are generally effects that are everything else that aren't of this goal.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!)
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [x ] Create a forked copy of this project.
+- [x ] Add PM as collaborator on Github.
+- [x ] Clone your OWN version of Repo (Not Lambda's by mistake!)
+- [x ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
+- [ x] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
+- [ x] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x ] Implement the project on this Branch, committing changes regularly.
+- [x ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ x] Add your Project Manager as a Reviewer on the Pull-request.
+- [ x] PM then will count the HW as done by  merging the branch back into master.
 
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
-- [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people)
-- [ ] Set the data you fetch to state
-- [ ] Map over the list and render a component for each character on the page
-- [ ] You must have at least one element for each star wars character in the data set
-- [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles
+- [ x] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
+- [ x] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people)
+- [ x] Set the data you fetch to state
+- [ x] Map over the list and render a component for each character on the page
+- [ x] You must have at least one element for each star wars character in the data set
+- [ x] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles
 - [ ] Finally, add at least two snapshot tests
 
 Required best practices:
 
-- [ ] Consistent naming. Examples: variables, functions, classes, and files.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [x ] Consistent naming. Examples: variables, functions, classes, and files.
+- [x ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [x ] Consistent quotation usage.
+- [x ] Spell-check.
+- [x ] Schedule time to review, refine and reassess your work.
 
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.

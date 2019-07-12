@@ -1,38 +1,35 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Segment, Dimmer, Loader, Image } from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 function Character({ characterData }) {
   return (
     <div className="character">
-      <Card centered>
-        <Card.Content>
-          <Card.Header>{characterData.name}</Card.Header>
-        </Card.Content>
-        <Card.Content>
-          <Card.Meta>{characterData.birth_year}</Card.Meta>
-          <Card.Meta>{characterData.eye_color}</Card.Meta>
-          <Card.Meta>{characterData.birth_year}</Card.Meta>
-          <Card.Meta>{characterData.gender}</Card.Meta>
-          <Card.Meta>{characterData.hair_color}</Card.Meta>
-          <Card.Meta>{characterData.height}</Card.Meta>
-          <Card.Meta>{characterData.mass}</Card.Meta>
-          <Card.Meta>{characterData.skin_color}</Card.Meta>
-        </Card.Content>
-      </Card>
-      {/* <p>{characterData.homeworld}</p> */}
-      {/* {characterData.films.map(film => (
-        <p key={film}>{film}</p>
-      ))}
-      {characterData.species.map(speci => (
-        <p key={speci}>{speci}</p>
-      ))}
-      {characterData.starships.map(starship => (
-        <p key={starship}>{starship}</p>
-      ))}
-      {characterData.vehicles.map(vehicle => (
-        <p key={vehicle}>{vehicle}</p>
-      ))} */}
+      {!characterData ? (
+        <Segment>
+          <Dimmer active inverted>
+            <Loader inverted>Loading</Loader>
+          </Dimmer>
+
+          <Image src="/images/wireframe/short-paragraph.png" />
+        </Segment>
+      ) : (
+        <Card centered>
+          <Card.Content>
+            <Card.Header>{characterData.name}</Card.Header>
+          </Card.Content>
+          <Card.Content>
+            <Card.Meta>{characterData.birth_year}</Card.Meta>
+            <Card.Meta>{characterData.eye_color}</Card.Meta>
+            <Card.Meta>{characterData.birth_year}</Card.Meta>
+            <Card.Meta>{characterData.gender}</Card.Meta>
+            <Card.Meta>{characterData.hair_color}</Card.Meta>
+            <Card.Meta>{characterData.height}</Card.Meta>
+            <Card.Meta>{characterData.mass}</Card.Meta>
+            <Card.Meta>{characterData.skin_color}</Card.Meta>
+          </Card.Content>
+        </Card>
+      )}
     </div>
   );
 }
