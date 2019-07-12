@@ -11,9 +11,9 @@ function Character({ characterData }) {
       <p>{characterData.gender}</p>
       <p>{characterData.hair_color}</p>
       <p>{characterData.height}</p>
-      <p>{characterData.homeworld}</p>
       <p>{characterData.mass}</p>
       <p>{characterData.skin_color}</p>
+      {/* <p>{characterData.homeworld}</p> */}
       {/* {characterData.films.map(film => (
         <p key={film}>{film}</p>
       ))}
