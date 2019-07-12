@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import { Card } from "semantic-ui-react";
 import axios from "axios";
 import "./App.css";
 import Character from "./components/Character";
@@ -37,6 +38,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      {/* <Card.Group key={apiData.characters.name} items={apiData.characters} /> */}
       {apiData.characters.map(character => (
         <Character key={character.name} characterData={character}/>
       ))}

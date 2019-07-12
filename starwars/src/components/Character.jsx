@@ -1,18 +1,25 @@
 import React from "react";
+import { Card } from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 function Character({ characterData }) {
   return (
     <div className="character">
-      <h3>{characterData.name}</h3>
-      <p>{characterData.birth_year}</p>
-      <p>{characterData.eye_color}</p>
-      <p>{characterData.birth_year}</p>
-      <p>{characterData.gender}</p>
-      <p>{characterData.hair_color}</p>
-      <p>{characterData.height}</p>
-      <p>{characterData.mass}</p>
-      <p>{characterData.skin_color}</p>
+      <Card centered>
+        <Card.Content>
+          <Card.Header>{characterData.name}</Card.Header>
+        </Card.Content>
+        <Card.Content>
+          <Card.Meta>{characterData.birth_year}</Card.Meta>
+          <Card.Meta>{characterData.eye_color}</Card.Meta>
+          <Card.Meta>{characterData.birth_year}</Card.Meta>
+          <Card.Meta>{characterData.gender}</Card.Meta>
+          <Card.Meta>{characterData.hair_color}</Card.Meta>
+          <Card.Meta>{characterData.height}</Card.Meta>
+          <Card.Meta>{characterData.mass}</Card.Meta>
+          <Card.Meta>{characterData.skin_color}</Card.Meta>
+        </Card.Content>
+      </Card>
       {/* <p>{characterData.homeworld}</p> */}
       {/* {characterData.films.map(film => (
         <p key={film}>{film}</p>
