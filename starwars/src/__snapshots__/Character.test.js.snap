@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Character /> should match snapshot 1`] = `
+<div
+  className="character"
+>
+  <div
+    className="ui segment"
+  >
+    <div
+      className="ui active transition visible inverted dimmer"
+      onClick={[Function]}
+    >
+      <div
+        className="content"
+      >
+        <div
+          className="ui inverted text loader"
+        >
+          Loading
+        </div>
+      </div>
+    </div>
+    <img
+      className="ui image"
+      src="/images/wireframe/short-paragraph.png"
+    />
+  </div>
+</div>
+`;
